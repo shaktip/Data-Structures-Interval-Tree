@@ -1,0 +1,11 @@
+graph {C1--C2
+C1--C3
+C2--C3
+C4
+C5--C6
+ZZZ--C1
+ZZZ--C2
+ZZZ--C5
+PP--ZZZ
+PP--C5
+ }

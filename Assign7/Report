@@ -1,0 +1,57 @@
+Report
+Function :
+1. Creating Centered BST for BuildT: 
+        This is binary tree is created on the concept of complete binary tree.
+        where left tree always contains greater than or equal to the number of
+        nodes in the right.
+        Time Complexity O(nlogn)
+2. Creating File input.dot :
+        It is created on the inorder traversal of BST concept.
+        Time Complexity : O(nlogn)
+        
+3. Insert a new Interval :
+        According to given span the new interval is added to BST, 
+        Time Complexity : In Best Case it is O(logn)
+                          In Worst Case it is O(n)
+                          
+4. FindOverlaps :
+        To Create a Overlap from Tree takes O(logn+k)
+        where k is how many composers can overlap, so it is output sensitive
+        complexity.
+        
+        
+5. MaxOverlaps :
+        From Given Interval, the overlapping interval finding takes O(k) time, where
+        k is size output,
+        but since every interval cannot be MaxOverlap, Max overlap is more than
+        50% overlap of an interval in the given span, which takes constant time to
+        find
+        so Overall Complexity is O(logn + k)
+        
+6. FindSongs :
+        From Given interval, to find the overlapping interval and printing their
+        songs genrewise takes O(logn + k + m)
+        where n is no of composers
+        k is size of overlaps
+        m is max size of genre
+
+7. BuildIG : 
+        It is to build a graph from the overlapping intervals.
+        It requires to read all the composer, and find the overlaps with them
+        and then build the nodes and edges for the graph.
+        so time complexity is 
+        O(n * (logn + k))
+        where n is no of composer
+        k is maximum size of overlap
+           
+
+8. BiggestTeam :
+         Since it uses MaxClique implementation, so it requires
+         O(n^2 * 2^n)
+         
+9. FindGroup :
+         It requires to find Biggest and Smallest Group Sizes which may 
+         overlap with at least one in the group.
+         so it needs DFS traversal.
+         Time Complexity is O(v + E)
+         
